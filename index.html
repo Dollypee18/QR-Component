@@ -21,8 +21,17 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-color: hsl hsl(216, 39%, 52%);
+        background: white hsl(0, 0%, 100%);
+        background: rgb(220, 220, 220);
         margin: 0;
+      }
+
+      .parent {
+        width: 320px;
+        height: 500px;
+        background: white;
+        padding: 24px;
+        border-radius: 20px;
       }
 
       .card {
@@ -58,20 +67,22 @@
     </style>
   </head>
   <body>
-    <div class="card">
-      <img src="images/image-qr-code.png" alt="qr-code" />
-      <h1>Improve your front-end skills by building projects</h1>
-      <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
-      </p>
-    </div>
+    <section class="parent">
+      <div class="card">
+        <img src="images/image-qr-code.png" alt="qr-code" />
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Dollypee</a>.
-    </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Dollypee</a>.
+      </div>
+    </section>
   </body>
 </html>
