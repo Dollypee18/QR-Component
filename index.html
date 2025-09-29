@@ -17,21 +17,29 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       body {
+        height: 100%;
+        margin: 0;
+      }
+      .container {
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
-        background: white hsl(0, 0%, 100%);
-        background: rgb(220, 220, 220);
-        margin: 0;
+        background-color: hsl(212, 45%, 89%);
       }
+      @media (min-width: 768px) {
+        .card {
+          padding: 30px;
+          max-width: 400px;
+        }
 
-      .parent {
-        width: 320px;
-        height: 500px;
-        background: white;
-        padding: 24px;
-        border-radius: 20px;
+        .card h1 {
+          font-size: 2rem;
+        }
+
+        .card p {
+          font-size: 1.1rem;
+        }
       }
 
       .card {
@@ -67,7 +75,7 @@
     </style>
   </head>
   <body>
-    <section class="parent">
+    <div class="container">
       <div class="card">
         <img src="images/image-qr-code.png" alt="qr-code" />
         <h1>Improve your front-end skills by building projects</h1>
@@ -76,13 +84,13 @@
           to the next level
         </p>
       </div>
+    </div>
 
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Dollypee</a>.
-      </div>
-    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Dollypee</a>.
+    </div>
   </body>
 </html>
